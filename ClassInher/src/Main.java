@@ -15,6 +15,8 @@ public class Main {
         AirPods a = new AirPods();
         a.oxygenLevel();
 
+        a.switchMusic();
+
 
 
     }
