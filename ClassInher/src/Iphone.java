@@ -1,4 +1,4 @@
-public class Iphone  extends Electronics{
+public class Iphone  extends Electronics implements Cloneable{
     public void hasBackCamera(){
         System.out.println("Has back camera!");
     }
@@ -17,4 +17,7 @@ public class Iphone  extends Electronics{
         System.out.println("You can't change OP!!!!! Don't even think about that!");
     }
 
+    public Object clone() throws CloneNotSupportedException{
+        return super.clone();
+    }
 }

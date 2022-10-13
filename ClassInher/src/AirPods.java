@@ -1,4 +1,4 @@
-public class AirPods extends Electronics implements HeadPhonesFunctions{
+public class AirPods extends Electronics implements HeadPhonesFunctions, Cloneable{
 
     public void oxygenLevel(){
         System.out.println("Oxygen present!");

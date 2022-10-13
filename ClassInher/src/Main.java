@@ -1,4 +1,5 @@
 public class Main {
+
     public static void main(String[] args) {
 
         Notebook n = new Notebook();
@@ -13,10 +14,23 @@ public class Main {
         System.out.println("Your color is "+n.color);
 
         AirPods a = new AirPods();
-        a.oxygenLevel();
-
         a.switchMusic();
+        try {
+            Iphone i1 = new Iphone();
+            Iphone iClone = (Iphone) i1.clone();
 
+            i1.setColor("Violet");
+            iClone.setColor("Teal");
+
+            System.out.println("Color of i is: "+i1.color);
+            System.out.println("Color of iClone is: "+iClone.color);
+
+            i1.setColor("Deep Violet");
+
+            System.out.println("Color of iClone is still: "+iClone.color);
+
+            }catch (CloneNotSupportedException c){
+        }
 
 
     }
